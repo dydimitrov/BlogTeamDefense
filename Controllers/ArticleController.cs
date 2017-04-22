@@ -149,7 +149,6 @@ namespace Blog.Controllers
                 {
                     return HttpNotFound();
                 }
-
                 //Delete article from dataBase
                 dataBase.Articles.Remove(article);
                 dataBase.SaveChanges();
@@ -213,6 +212,7 @@ namespace Blog.Controllers
                     //Set article properties 
                     article.Title = model.Title;
                     article.Content = model.Content;
+                    
 
                     //Save article state in dataBase
                     dataBase.Entry(article).State = EntityState.Modified;
