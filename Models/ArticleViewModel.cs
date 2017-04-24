@@ -17,7 +17,7 @@ namespace Blog.Models
         [Required]
         public string Content { get; set; }
 
-        [Required]
+        
         public string AuthorId { get; set; }
 
         public string ImagePath { get; set; }

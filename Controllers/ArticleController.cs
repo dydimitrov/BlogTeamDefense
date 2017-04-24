@@ -160,6 +160,7 @@ namespace Blog.Controllers
         }
 
         //Get: Article/Edit
+        [HttpGet]
         public ActionResult Edit(int? id)
         {
             if(id == null)
@@ -190,6 +191,7 @@ namespace Blog.Controllers
                 model.id = article.Id;
                 model.Title = article.Title;
                 model.Content = article.Content;
+                model.ImagePath = article.ImagePath;
 
                 //Pass the view model to view
                 return View(model);
@@ -197,6 +199,7 @@ namespace Blog.Controllers
         }
 
         //Post: Article/Edit
+        [HttpPost]
         public ActionResult Edit(ArticleViewModel model)
         {
             //Check is modle valid
