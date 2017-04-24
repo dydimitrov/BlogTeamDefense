@@ -55,14 +55,14 @@ namespace Blog
             //   consumerSecret: "");
 
             //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            //   appId: "1747747375535593",
+            //   appSecret: "7ec28533da10ba67efbab85016f0b097");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "871616075189-kfu54rnvrt595klm7l89ahn60s1m6lm4.apps.googleusercontent.com",
+                ClientSecret = "LK-HoRLROCVRWD8R70v0YCH6"
+            });
         }
     }
 }
